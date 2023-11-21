@@ -1,0 +1,94 @@
+header{
+    min-height: 100vh;
+    margin: 0 90px;
+
+    .content{
+        min-height: 100vh;
+        position: relative;
+
+        .titles{
+            position: absolute;
+            width: 100%;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h1{
+                color: #f1f1f1;
+                text-transform: uppercase;
+                width: 570px;
+                margin: 0 auto;
+                font-size: 4rem;
+            }
+            p{
+                margin: 40px 0;
+                color: #f1f1f1;
+                font-family: "MerriweatherSans";
+                font-style: italic;
+                font-weight: 500;
+            }
+            span{
+
+                i{
+                    color: #f1f1f1;
+                    font-size: 40px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(153, 153, 153, 0.445);
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+
+            .left_side{
+                width: 50%;
+
+                ul{
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+                
+
+                    li{
+                        font-size: .7rem;
+                        color: #f1f1f1;
+                        cursor: pointer;
+                        padding: 15px 10px;
+                        transition: .4s;
+
+                        &:hover{
+                            background: #f1f1f1;
+
+                            a{
+                             color: #000;   
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .right_side{
+                width: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 15px;
+
+                span{
+                    cursor: pointer;
+
+                    i{
+                        color: #f1f1f1;
+                    }
+                }
+            }
+        }
+    }
+}

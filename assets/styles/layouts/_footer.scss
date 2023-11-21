@@ -1,0 +1,116 @@
+footer{
+    margin: 0 90px 30px;
+    background: #e9e9e9;
+
+    .content{
+        display: flex;
+        padding: 0 20px;
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 35px 20px;
+
+            form{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+
+                label{
+                    font-weight: 700;
+                    color: #6b6b6b;
+                    text-transform: uppercase;
+                    font-size: .7rem;
+                    letter-spacing: 1px;
+                    padding-top: 4px;
+                }
+                input, textarea{
+                    height: 40px;
+                    border-radius: 2px;
+                    border: 1px solid #00000038;
+                    background: transparent;
+                    outline: none;
+                    padding: 0 5px;
+                    margin: 10px 0;
+                    width: 90%;
+                }
+                textarea{
+                    height: 140px;
+                    resize: none;
+                }
+            }
+
+            button{
+                width: 50%;
+                border: 2px solid #00000038;
+                color: #6b6b6b;
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-left: 1px solid #00000038;
+            width: 50%;
+            padding: 40px 0px;
+
+            div{
+                padding: 0 0 0 20px;
+                height: 70px;
+
+                display: grid;
+                grid-template-columns: 30% 70%;
+                justify-items: start;
+
+                h3{
+                    font-size: .7rem;
+                    text-transform: uppercase;
+                    color: #6b6b6b;
+                }
+
+                p{
+                    font-family: "MerriweatherSans";
+                    color: #6b6b6b;
+                    font-size: .8rem;
+                    cursor: pointer;
+                }
+            }
+            .adresse{
+                border-bottom: 1px solid #00000038;
+            }
+            .phone{
+                border-bottom: 1px solid #00000038;
+            }
+            .mail{
+                border-bottom: 1px solid #00000038;
+            }
+            .social{
+
+                h3{
+                    margin-top: 12px;
+                }
+
+                div{
+                    display: flex;
+                    width: 70%;
+                    justify-content: space-between;
+                    padding: 0;
+
+                    i{
+                        border: 1px solid #00000038;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: .8rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
