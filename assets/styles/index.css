@@ -49,20 +49,21 @@ header .content {
   min-height: 100vh;
   position: relative;
 }
+header .content h1 {
+  color: white;
+  text-transform: uppercase;
+  width: 570px;
+  margin: 0 auto;
+  font-size: 4rem;
+}
 header .content .titles {
   position: absolute;
   width: 100%;
   top: 48%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-header .content .titles h1 {
-  color: #f1f1f1;
-  text-transform: uppercase;
-  width: 570px;
-  margin: 0 auto;
-  font-size: 4rem;
 }
 header .content .titles p {
   margin: 40px 0;
@@ -135,6 +136,21 @@ header .content .nav .right_side span {
 header .content .nav .right_side span i {
   color: #f1f1f1;
 }
+@media screen and (max-width: 745px) {
+  header .content h1 {
+    font-size: 5vw;
+    width: 400px;
+    word-wrap: break-word;
+    color: red !important;
+  }
+}
+header nav {
+  background: #000;
+}
+header nav li {
+  color: aquamarine;
+  background: #000;
+}
 
 section {
   margin: 0 90px;
@@ -159,6 +175,7 @@ section .main_content .top_box .box .date::after {
   top: 50%;
   left: 80%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 section .main_content .top_box .box .date::before {
@@ -170,6 +187,7 @@ section .main_content .top_box .box .date::before {
   top: 50%;
   left: 20%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 section .main_content .top_box .box h2 {
