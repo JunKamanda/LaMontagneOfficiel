@@ -136,22 +136,15 @@ header .content .nav .right_side span {
 header .content .nav .right_side span i {
   color: #f1f1f1;
 }
-@media screen and (max-width: 745px) {
+
+@media screen and (max-width: 730px) {
   header .content h1 {
-    font-size: 5vw;
-    width: 400px;
-    word-wrap: break-word;
-    color: red !important;
+    color: red;
+  }
+  .nav li {
+    background-color: lightcoral;
   }
 }
-header nav {
-  background: #000;
-}
-header nav li {
-  color: aquamarine;
-  background: #000;
-}
-
 section {
   margin: 0 90px;
   background: #f8f8f8;

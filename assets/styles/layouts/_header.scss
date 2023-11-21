@@ -93,32 +93,39 @@ header{
             }
         }
     }
-
     
-  
-@media screen and (max-width:745px){
-    .content{
-        h1{
-            font-size:5vw;
-            width:400px;
-            word-wrap: break-word; 
-            color: red!important;   
-         }
-     }
-    }
+   }
 
-    nav{
-        background: #000;
-        li{
-            color: aquamarine;
-            background: #000;
+   @media screen and (max-width:730px){
+
+    header{
+
+        .content{
+            
+            h1{
+                color: red;
+            }
+
         }
+
+       
+        }
+
+
+        .nav{
+
+            li{
+                background-color:lightcoral;
+            }
     }
+}
+    
+   
+
 
 
    
 
-}
 
   
 
