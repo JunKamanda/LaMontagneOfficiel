@@ -1,17 +1,11 @@
 section{
     margin: 0 90px;
     background: #f8f8f8;
-
     .main_content{
-
-        
         .top_box{
-
-
             .box{
                 width: 80%;
                 margin: 0 auto;
-
                 .date{
                     font-family: "MerriweatherSans", sans-serif;
                     font-size: .9rem;
@@ -39,7 +33,6 @@ section{
                         transform: translate(-50%, -50%);
                     }
                 }
-
                 h2{
                     text-transform: uppercase;
                     font-size: 2rem;
@@ -132,25 +125,19 @@ section{
                         object-fit: cover;
                     }
                 }
-
                 .paragraphe{
                     font-family: "MerriweatherSans", sans-serif;
                     font-size: .8rem;
                     margin: 0 auto;
                     text-align: left;
                     width: 70%;
-
                 }
             }
         }
     }
 }
-
 @media screen and (max-width:730px){
-
     .main_content{
-
-
         .top_box{
              
             //le before dans .date: et after  pour reduire la taille pose probleme a revoir de ton coté !!!
@@ -171,7 +158,6 @@ section{
 
             }
         }
-
         .bottom_box{
             display:flex;
             flex-direction: column;  
@@ -180,8 +166,6 @@ section{
                 display: none;
             }
         }
-           
-        
     }
       
         
