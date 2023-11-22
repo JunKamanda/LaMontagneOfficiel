@@ -138,8 +138,17 @@ header .content .nav .right_side span i {
 }
 
 @media screen and (max-width: 730px) {
+  header .content .titles {
+    width: 60%;
+    top: 60%;
+  }
   header .content h1 {
-    color: red;
+    color: lightcoral;
+    font-size: 4vw;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    word-break: keep-all;
   }
   .nav li {
     background-color: lightcoral;
@@ -162,7 +171,7 @@ section .main_content .top_box .box .date {
 section .main_content .top_box .box .date::after {
   content: "";
   position: absolute;
-  width: 30%;
+  width: 20%;
   height: 1px;
   background: #000;
   top: 50%;
@@ -174,7 +183,7 @@ section .main_content .top_box .box .date::after {
 section .main_content .top_box .box .date::before {
   content: "";
   position: absolute;
-  width: 30%;
+  width: 20%;
   height: 1px;
   background: #000;
   top: 50%;
@@ -272,6 +281,33 @@ section .main_content .bottom_box .box .paragraphe {
   width: 70%;
 }
 
+@media screen and (max-width: 730px) {
+  .main_content .top_box .box .date {
+    color: lightcoral;
+    position: relative;
+  }
+  .main_content .top_box .box .date::before {
+    content: "";
+    width: 2px;
+    position: absolute;
+    background: red;
+    height: 1px;
+    left: 0;
+  }
+  .main_content .bottom_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main_content .bottom_box::after {
+    content: "";
+    display: none;
+  }
+}
 footer {
   margin: 0 90px 30px;
   background: #e9e9e9;
@@ -402,4 +438,38 @@ footer .content .right .social div i {
           justify-content: center;
   font-size: 0.8rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 730px) {
+  footer .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .content .left {
+    width: 100%;
+  }
+  footer .content .right {
+    width: 100%;
+    border: none;
+  }
+  footer .content .right h3, footer .content .right p, footer .content .right span {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  footer .content .right .adresse, footer .content .right .phone, footer .content .right .mail, footer .content .right .social {
+    border: 1px solid rgba(0, 0, 0, 0.2196078431);
+    border-left: none;
+    border-right: none;
+  }
+  footer .content .right .social {
+    border-bottom: none;
+  }
 }/*# sourceMappingURL=index.css.map */

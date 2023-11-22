@@ -21,7 +21,7 @@ section{
                     &::after{
                         content: "";
                         position: absolute;
-                        width: 30%;
+                        width: 20%;
                         height: 1px;
                         background: #000;
                         top: 50%;
@@ -31,7 +31,7 @@ section{
                     &::before{
                         content: "";
                         position: absolute;
-                        width: 30%;
+                        width: 20%;
                         height: 1px;
                         background: #000;
                         top: 50%;
@@ -144,4 +144,50 @@ section{
             }
         }
     }
+}
+
+@media screen and (max-width:730px){
+
+    .main_content{
+
+
+        .top_box{
+             
+            //le before dans .date: et after  pour reduire la taille pose probleme a revoir de ton coté !!!
+            .box{
+                .date{
+                    color:lightcoral;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        width:2px;
+                        position: absolute;
+                        background: red;
+                        height: 1px;
+                        left:0;
+                    }
+                    
+                }
+
+            }
+        }
+
+        .bottom_box{
+            display:flex;
+            flex-direction: column;  
+            &::after{
+                content: "";
+                display: none;
+            }
+        }
+           
+        
+    }
+      
+        
+        
+        
+        
+        
+    
 }

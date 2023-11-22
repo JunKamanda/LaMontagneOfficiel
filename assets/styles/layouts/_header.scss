@@ -94,24 +94,30 @@ header{
         }
     }
     
-   }
+}
 
-   @media screen and (max-width:730px){
+@media screen and (max-width:730px){
 
     header{
 
         .content{
-            
-            h1{
-                color: red;
+
+            .titles{
+
+                width: 60%;
+                top: 60%;
+
             }
-
+            h1{
+                color:lightcoral;
+                font-size:4vw;
+                width:100%;
+                text-align: center;
+                margin:0 auto;
+                word-break:keep-all;
+            }
         }
-
-       
         }
-
-
         .nav{
 
             li{
@@ -119,6 +125,7 @@ header{
             }
     }
 }
+
     
    
 
