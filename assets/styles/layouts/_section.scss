@@ -1,5 +1,5 @@
 section{
-    margin: 0 90px;
+    margin: 0 50px;
     background: #f8f8f8;
 
     .main_content{
@@ -18,32 +18,26 @@ section{
                     padding: 50px 0;
                     position: relative;
 
-                    &::after{
+                    &::after, &::before{
                         content: "";
                         position: absolute;
                         width: 30%;
                         height: 1px;
                         background: #000;
                         top: 50%;
-                        left: 80%;
-                        transform: translate(-50%, -50%);
+                        left: 50%;
+                        transform: translate(-50%, -50%) translateX(100%);
                     }
                     &::before{
-                        content: "";
-                        position: absolute;
-                        width: 30%;
-                        height: 1px;
-                        background: #000;
-                        top: 50%;
-                        left: 20%;
-                        transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%) translateX(-100%);
                     }
                 }
 
                 h2{
                     text-transform: uppercase;
-                    font-size: 2rem;
-                    width: 340px;
+                    font-size: 2.1rem;
+                    letter-spacing: -1px;
+                    width: 330px;
                     margin: 0 auto;
                 }
 
@@ -140,6 +134,71 @@ section{
                     text-align: left;
                     width: 70%;
 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 777px){
+    section{
+        margin: 0 25px;
+        .main_content{
+            .top_box{
+                
+                .box{
+                    .date{
+    
+                        &::after, &::before{
+                           width: 40%;
+                        }
+                    }
+
+                    h2{
+                        font-size: 1.8rem;
+                        width: 270px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 583px){
+    section{
+        .main_content{
+            .top_box{
+                
+                .box{
+                    .date{
+    
+                        &::after, &::before{
+                           width: 30%;
+                           transform: translateX(90%);
+                        }
+                        &::before{
+                            transform: translateX(-190%);
+                        }
+                    }
+
+                    h2{
+                        font-size: 1.2rem;
+                        width: 200px;
+                    }
+                    .paragraphe{
+                        width: 70%;
+                    }
+                }
+            }
+
+            .bottom_box{
+                flex-direction: column;
+
+                &::after{
+                    display: none;
+                }
+
+                .box{
+                    margin-top: 30px;
                 }
             }
         }
