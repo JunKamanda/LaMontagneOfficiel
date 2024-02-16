@@ -11,6 +11,7 @@ section{
             .box{
                 width: 80%;
                 margin: 0 auto;
+                position: relative;
 
                 .date{
                     font-family: "MerriweatherSans", sans-serif;
@@ -38,16 +39,33 @@ section{
                     font-size: 2.1rem;
                     letter-spacing: -1px;
                     width: 330px;
-                    margin: 0 auto;
-                }
+                    margin: 30px auto;
+                    transition: 1s ease-in-out;
 
+                    // position: absolute;
+                    // top: 0;
+                    // left: 50%;
+                    // transform: translate(-50%, -50%);
+                }
                 .paragraphe{
                     font-family: "MerriweatherSans", sans-serif;
-                    font-size: .8rem;
-                    font-style: italic;
-                    width: 50%;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: #f8f8f8;
+                    background: rgba(0, 0, 0, 0.445);
+                    width: 90%;
                     margin: 20px auto;
                     line-height: 27px;
+                    position: absolute;
+                    top: 90%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    transition: .8s ease-in-out;
+                }
+                .para_section{
+                    opacity: 1;
+                    top: 75%;
                 }
 
                 .img{
@@ -89,6 +107,7 @@ section{
                 }
 
             .box{
+                position: relative;
 
                 .date{
                     font-family: "MerriweatherSans", sans-serif;
@@ -129,11 +148,10 @@ section{
 
                 .paragraphe{
                     font-family: "MerriweatherSans", sans-serif;
-                    font-size: .8rem;
+                    font-size: .9rem;
                     margin: 0 auto;
-                    text-align: left;
                     width: 70%;
-
+                    text-align: left;
                 }
             }
         }
@@ -157,6 +175,12 @@ section{
                     h2{
                         font-size: 1.8rem;
                         width: 270px;
+                    }
+                    .paragraphe{
+                        font-size: 1rem;
+                    }
+                    .para_section{
+                        top: 70%;
                     }
                 }
             }
@@ -185,7 +209,7 @@ section{
                         width: 200px;
                     }
                     .paragraphe{
-                        width: 70%;
+                        display: none;
                     }
                 }
             }

@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- ENTETE --> <!-- ENTETE --><!-- ENTETE --><!-- ENTETE -->
-    <header>
+    <header class="section" id="header">
         <div class="content">
 
             <div class="titles">
@@ -21,9 +21,9 @@
             <div class="nav">
                 <div class="left_side">
                     <ul>
-                        <li><a href="#">This is massively</a></li>
-                        <li><a href="#">Generic page</a></li>
-                        <li><a href="#">Elements reference</a></li>
+                        <li class="active"><a href="#header">This is massively</a></li>
+                        <li><a href="#main">Generic page</a></li>
+                        <li><a href="#footer">Elements reference</a></li>
                     </ul>
                 </div>
                 <div class="right_side">
@@ -37,17 +37,17 @@
     </header>
 
     <!-- SECTION MAIN --> <!-- SECTION MAIN --><!-- SECTION MAIN --><!-- SECTION MAIN -->
-    <section>
-        <div class="main_content" id="main">
+    <section class="section" id="main">
+        <div class="main_content">
             <!-- TOP BOX --><!-- TOP BOX -->
             <div class="top_box">
                 <div class="box">
                     <p class="date">Novembre 11, 2023</p>
 
-                    <h2>And this is a massive headline</h2>
+                    <h2 class="titleSection">And this is a massive headline</h2>
                     <p class="paragraphe">Lorem ipsum dolor sit amet,         consectetur adipisicing elit. Dolorem a aliquid enim voluptates quam accusantium dolor sequi libero laboriosam voluptatibus.</p>
                     
-                    <div class="img">
+                    <div class="img" id="img1">
                         <img src="./assets/images/pic01.jpg" alt="saut sur la montagne">
                     </div>
                     <button>Full story</button>
@@ -61,7 +61,7 @@
 
                     <h2>Sed Magna Ipsume faucibus</h2>
                     
-                    <div class="img2">
+                    <div class="img2" id="img2">
                         <img src="./assets/images/pic02.jpg" alt="saut sur la montagne">
                     </div>
                     <p class="paragraphe">Lorem ipsum dolor sit amet,         consectetur adipisicing elit. Dolorem a aliquid enim voluptates quam accusantium dolor sequi libero laboriosam voluptatibus.</p>
@@ -72,7 +72,7 @@
 
                     <h2>Primis eget imperdiet lorem</h2>
                     
-                    <div class="img3">
+                    <div class="img3" id="img2">
                         <img src="./assets/images/pic03.jpg" alt="saut sur la montagne">
                     </div>
                     <p class="paragraphe">Lorem ipsum dolor sit amet,         consectetur adipisicing elit. Dolorem a aliquid enim voluptates quam accusantium dolor sequi libero laboriosam voluptatibus.</p>
@@ -84,7 +84,7 @@
     </section>
 
     <!-- FOOTER --> <!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
-    <footer>
+    <footer class="section" id="footer">
         <div class="content">
             <div class="left">
                 <form action="">
@@ -126,5 +126,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./assets/script/index.js"></script>
 </body>
 </html>

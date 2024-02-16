@@ -108,6 +108,11 @@ footer{
                         justify-content: center;
                         font-size: .8rem;
                         cursor: pointer;
+                        transition: .7s ease-in-out;
+
+                        &:hover{
+                            transform: rotateZ(360deg);
+                        }
                     }
                 }
             }
